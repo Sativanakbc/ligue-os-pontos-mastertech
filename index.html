@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ligue os Pontos - Mastertech</title>
+    <script defer src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Orbitron" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ligue os Pontos - Mastertech</h1>
+    </header>
+
+    <div id="painel">
+        <div id="placar">
+            <h2>Placar de Pontuação</h2>
+            <p id="nomeA">Player 1:</p>
+            <p><span id="playerA">0</span> quadrados completos</p>
+            <p id="nomeB">Player 2:</p>
+            <p><span id="playerB">0</span> quadrados completos</p>
+        </div>
+
+        <div id="informacoes">
+            <h3>Tempo de Partida & Rodada</h3>
+            <p>00h:00m:00s em jogo.</p>
+            <p>N° da partida: <span>0</span></p>
+        </div>
+
+        <div id="controles">
+            <h4>Controles</h4>
+            <button id="novaPartida">Iniciar uma nova partida</button>
+            <button id="cancelaPartida">Cancelar toda partida</button>
+            <div>
+                <button id="apagaPlacar">Apagar placar</button>
+                <button id="algumaCoisa">esqueci oq é</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="configs">
+        
+        <div>
+            <p>Configurações de Jogo</p>
+            <span>Definições Player 1</span>
+            <label for="nomePlayer1">Nome do Player:</label>
+            <input type="text" name="nomePlayer1" id="nomePlayer1">
+            <label for="corPlayer1">Cor da Borda:</label>
+            <input type="color" name="corPlayer1" id="corPlayer1" value="#ff0000">
+
+            <span>Definições Player 2</span>
+            <label for="nomePlayer2">Nome do Player:</label>
+            <input type="text" name="nomePlayer2" id="nomePlayer2">
+            <label for="corPlayer2">Cor da Borda:</label>
+            <input type="color" name="corPlayer2" id="corPlayer2" value="#ff0000">
+
+            <button id="comecarGame">Começar a jogar</button>
+        </div>
+    </div>
+
+    <section id="game">
+
+    </section>
+
+    <div id="instrucao">
+        <h5>Instruções do Game</h5>
+        
+        <ul>
+            <li>Para iniciar um novo jogo, clique em "Iniciar uma nova partida";</li>
+            <li>Se deseja encerrar a partida atual e apagar o placar, clique em "Cancelar toda partida";</li>
+            <li>Se precisar apagar o placar, clique em "Apagar placar".</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>Desenvolvido com <3 por Rafael Griggio.</p>
+    </footer>
+</body>
+
+</html>
